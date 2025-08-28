@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form id="registerForm">
+
+      <!-- Username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter username">
+      <div id="usernameErrors"></div>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter email">
+      <div id="emailErrors"></div>
+      
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Enter password">
+        <span class="toggle-password" data-target="password">👁️</span>
+      </div>
+      <div id="passwordErrors"></div>
+
+      <!-- Confirm Password -->
+      <label for="confirmPassword">Confirm Password:</label>
+      <div class="password-wrapper">
+        <input type="password" id="confirmPassword" placeholder="Confirm password">
+        <span class="toggle-password" data-target="confirmPassword">👁️</span>
+      </div>
+      <div id="confirmErrors"></div>
+
+      <button type="submit">Register</button>
+      <p id="successMsg" class="success" style="display:none;">Registration successful!</p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
